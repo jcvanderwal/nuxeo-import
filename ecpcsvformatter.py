@@ -71,13 +71,15 @@ def format_excel_file(path, csv_name):
     #Document Format
     header_row.append("def:Format")
     #File Location
-    header_row.append("def:Location")
+    header_row.append("def:Location")   
     #Document Note
     header_row.append("def:Note")
     #Document Asset
     header_row.append("def:Asset")
     #Document Number
     header_row.append("def:DocumentNumber")
+    #Brand
+    header_row.append("def:Brand")
 
     #Write the header to the csv file
     csv_writer.writerow(header_row)
@@ -96,7 +98,13 @@ def format_excel_file(path, csv_name):
         csv_row.append(cell2string(row[2])) if len(cell2string(row[2]))>2 else csv_row.append("")
         #Date,  CSV importer needs MM/dd/yyyy, excels files are yyyyMMddxx
         disposable=cell2string(row[3])[:8]
-        csv_row.append(disposable[4:6]+"/"+disposable[6:8]+"/"+disposable[:4])
+        if len(disposable)<6 and len(disposable) != 0 :
+            print "foute invoer datum op regel: ", row_idx
+            csv_row.append("")
+        elif len(disposable)==6:
+            csv_row.append("01/"+disposable[4:6]+"/"+disposable[:4])
+        else:
+            csv_row.append(disposable[4:6]+"/"+disposable[6:8]+"/"+disposable[:4])
         #DepartementSubject (should looks like dpt/subject/subsubject)
         dpt_subj=cell2string(row[1])+"/"+cell2string(row[2])[:2] #dpt_subj is reused for the name
         if len(cell2string(row[2]))>2:
@@ -104,7 +112,7 @@ def format_excel_file(path, csv_name):
         csv_row.append(dpt_subj)
         #DocumentKind
         csv_row.append(cell2string(row[7]))
-         #DocumentKind
+        #DocumentKind
         csv_row.append(cell2string(row[8]))
         #Document type
         if cell2string(row[5])=="1":
@@ -126,9 +134,9 @@ def format_excel_file(path, csv_name):
             disposable+=("."+cell2string(row[3])+"."+cell2string(row[4]))
         csv_row.append(disposable)
         #Cadastral information : a list for each Fgl for each Mappa for each Subalterno
-        fgl_list = cell2string(row[11]).replace(" ","").replace("-",",").split(",")
-        mappa_list = cell2string(row[12]).replace(" ","").replace("-",",").split(",")
-        subalterno_list = cell2string(row[13]).replace(" ","").replace("-",",").split(",")
+        fgl_list = cell2string(row[12]).replace(" ","").replace("-",",").split(",")
+        mappa_list = cell2string(row[13]).replace(" ","").replace("-",",").split(",")
+        subalterno_list = cell2string(row[14]).replace(" ","").replace("-",",").split(",")
         disposable=""
         for fgl in fgl_list:
             if mappa_list[0]!="":
@@ -144,21 +152,22 @@ def format_excel_file(path, csv_name):
             disposable=disposable[:(len(disposable)-1)]
         csv_row.append(disposable)
         #Data room boolean
-        csv_row.append("0" if (cell2string(row[24])=="no" or cell2string(row[24])=="")  else "1")
+        csv_row.append("0" if (cell2string(row[25])=="no" or cell2string(row[25])=="")  else "1")
         # Document format
-        csv_row.append(cell2string(row[19]))
+        csv_row.append(cell2string(row[20]))
         #File Location (sede.scaff.faldo)
-        disposable=cell2string(row[22])
+        disposable=cell2string(row[23])
+        disposable+=(DELIMITOR+cell2string(row[22])) if cell2string(row[22])!="" else ""
         disposable+=(DELIMITOR+cell2string(row[21])) if cell2string(row[21])!="" else ""
-        disposable+=(DELIMITOR+cell2string(row[20])) if cell2string(row[20])!="" else ""
         csv_row.append(disposable)
         #Document Note
-        csv_row.append(cell2string(row[23]))
+        csv_row.append(cell2string(row[24]))
         #Document Asset
-        csv_row.append(cell2string(row[10]))
+        csv_row.append(cell2string(row[9]))
         #Document Number
-        csv_row.append(cell2string(row[17]))
-        
+        csv_row.append(cell2string(row[18]))
+        #Brand
+        csv_row.append(cell2string(row[10]))
         #Write the row to the CSV    
         csv_writer.writerow(csv_row)
 
