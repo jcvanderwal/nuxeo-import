@@ -1,0 +1,86 @@
+2014-08-05 12:15:18,774 INFO  [localhost-startStop-1] [org.apache.shindig.common.cache.ehcache.EhCacheCacheProvider] Creating cache named gadgetSpecs
+2014-08-05 12:15:18,821 INFO  [localhost-startStop-1] [org.apache.shindig.common.cache.ehcache.EhCacheCacheProvider] Creating cache named parsedCss
+2014-08-05 12:15:18,830 INFO  [localhost-startStop-1] [org.apache.shindig.common.cache.ehcache.EhCacheCacheProvider] Creating cache named expressions
+2014-08-05 12:15:18,840 INFO  [localhost-startStop-1] [org.apache.shindig.config.JsonContainerConfig] Loading resources from: opensocial/containers/opensocial-container.js
+2014-08-05 12:15:18,841 INFO  [localhost-startStop-1] [org.apache.shindig.config.JsonContainerConfig] Reading container config: opensocial/containers/opensocial-container.js
+2014-08-05 12:15:18,847 INFO  [localhost-startStop-1] [org.apache.shindig.config.JsonContainerConfig] Loading resources from: config/opensocial-container.js
+2014-08-05 12:15:18,848 INFO  [localhost-startStop-1] [org.apache.shindig.config.JsonContainerConfig] Reading container config: config/opensocial-container.js
+2014-08-05 12:15:18,894 INFO  [localhost-startStop-1] [org.apache.shindig.common.cache.ehcache.EhCacheCacheProvider] Creating cache named parsedCssDom
+2014-08-05 12:15:19,071 INFO  [localhost-startStop-1] [org.apache.shindig.gadgets] Loading resources from: res:nxfeatures/features.txt
+2014-08-05 12:15:19,511 INFO  [localhost-startStop-1] [org.apache.shindig.gadgets.oauth.OAuthModule] Using file /var/lib/nuxeo/server/tmp/nxkey8146979599944203525.txt for OAuth client-side state encryption
+2014-08-05 12:15:19,525 INFO  [localhost-startStop-1] [org.apache.shindig.common.cache.ehcache.EhCacheCacheProvider] Creating cache named messageBundles
+2014-08-05 12:15:21,395 WARN  [localhost-startStop-1] [org.hibernate.ejb.Ejb3Configuration] Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2014-08-05 12:15:22,421 WARN  [persistence-init-nxplaceful] [org.hibernate.ejb.Ejb3Configuration] Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2014-08-05 12:15:22,584 WARN  [localhost-startStop-1] [org.hibernate.ejb.Ejb3Configuration] Overriding hibernate.transaction.factory_class is dangerous, this might break the EJB3 specification implementation
+2014-08-05 12:15:23,585 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "faceted_search_default_cv": DEFINITION_CADASTRAL, DEFINITION_IDDEPARTMENTSUBJECT
+2014-08-05 12:15:23,697 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "ecp_file_obsolete_no_hierarchy_cv": DEFINITION_CADASTRAL, DEFINITION_IDDEPARTMENTSUBJECT
+2014-08-05 12:15:23,830 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "userinfo": DOCUMENTRIGHT, DOCUMENTID
+2014-08-05 12:15:23,925 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "ecp_file_listing_hierarchy_cv": DEFINITION_CADASTRAL, DEFINITION_IDDEPARTMENTSUBJECT
+2014-08-05 12:15:24,005 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "definition": DOCUMENTNATURE, CADASTRAL, IDDOCUMENT, IDDATE, UNIT, IDDEPARTMENT, IDSUBJECT, IDDEPARTMENTSUBJECT, IDPROPERTY, IDSUBSUBJECT
+2014-08-05 12:15:24,010 WARN  [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.JDBCMapper] Database contains additional unused columns for table "ecp_file_listing_no_hierarchy_cv": DEFINITION_CADASTRAL, DEFINITION_IDDEPARTMENTSUBJECT
+2014-08-05 12:15:24,185 ERROR [localhost-startStop-1] [org.nuxeo.ecm.core.storage.sql.jdbc.dialect.DialectPostgreSQL] Security permission for BROWSE has changed, you need to rebuild the optimized read acls:DROP TABLE aclr_permission; DROP TABLE aclr; then restart.
+2014-08-05 12:15:26,126 INFO  [localhost-startStop-1] [org.nuxeo.ecm.automation.core.AutomationComponent] You can activate automation trace mode to get more informations on automation executions
+2014-08-05 12:15:26,275 INFO  [localhost-startStop-1] [org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2014-08-05 12:15:26,331 INFO  [localhost-startStop-1] [org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2014-08-05 12:15:26,331 INFO  [localhost-startStop-1] [org.quartz.core.QuartzScheduler] Quartz Scheduler v.1.8.6 created.
+2014-08-05 12:15:26,334 INFO  [localhost-startStop-1] [org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2014-08-05 12:15:26,341 INFO  [localhost-startStop-1] [org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v1.8.6) 'Quartz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2014-08-05 12:15:26,342 INFO  [localhost-startStop-1] [org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'Quartz' initialized from an externally opened InputStream.
+2014-08-05 12:15:26,342 INFO  [localhost-startStop-1] [org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 1.8.6
+2014-08-05 12:15:26,342 INFO  [localhost-startStop-1] [org.quartz.core.QuartzScheduler] Scheduler Quartz_$_NON_CLUSTERED started.
+2014-08-05 12:15:27,702 WARN  [OfficeProcessThread-0] [org.artofsolving.jodconverter.office.OfficeProcess] Restarting OOo after code 81 ...
+2014-08-05 12:15:30,722 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}RelationshipService from class org.apache.chemistry.opencmis.commons.impl.jaxb.RelationshipServicePort
+2014-08-05 12:15:33,351 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/RelationshipService
+2014-08-05 12:15:33,411 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}PolicyService from class org.apache.chemistry.opencmis.commons.impl.jaxb.PolicyServicePort
+2014-08-05 12:15:34,002 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/PolicyService
+2014-08-05 12:15:34,006 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}MultiFilingService from class org.apache.chemistry.opencmis.commons.impl.jaxb.MultiFilingServicePort
+2014-08-05 12:15:34,586 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/MultiFilingService
+2014-08-05 12:15:34,589 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}DiscoveryService from class org.apache.chemistry.opencmis.commons.impl.jaxb.DiscoveryServicePort
+2014-08-05 12:15:35,050 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/DiscoveryService
+2014-08-05 12:15:35,054 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}RepositoryService from class org.apache.chemistry.opencmis.commons.impl.jaxb.RepositoryServicePort
+2014-08-05 12:15:35,639 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/RepositoryService
+2014-08-05 12:15:35,648 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://ws.platform.ecm.nuxeo.org/}NuxeoRemotingService from class org.nuxeo.ecm.platform.ws.NuxeoRemotingBean
+2014-08-05 12:15:36,218 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /nuxeoremoting
+2014-08-05 12:15:36,222 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}NavigationService from class org.apache.chemistry.opencmis.commons.impl.jaxb.NavigationServicePort
+2014-08-05 12:15:37,059 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/NavigationService
+2014-08-05 12:15:37,064 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}ACLServiceService from class org.apache.chemistry.opencmis.commons.impl.jaxb.ACLServicePort
+2014-08-05 12:15:37,868 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/ACLService
+2014-08-05 12:15:37,874 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}VersioningService from class org.apache.chemistry.opencmis.commons.impl.jaxb.VersioningServicePort
+2014-08-05 12:15:38,888 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/VersioningService
+2014-08-05 12:15:38,893 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://ws.audit.platform.ecm.nuxeo.org/}WSAuditService from class org.nuxeo.ecm.platform.audit.ws.WSAuditBean
+2014-08-05 12:15:39,102 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /nuxeoaudit
+2014-08-05 12:15:39,108 INFO  [localhost-startStop-1] [org.apache.cxf.service.factory.ReflectionServiceFactoryBean] Creating Service {http://docs.oasis-open.org/ns/cmis/ws/200908/}ObjectService from class org.apache.chemistry.opencmis.commons.impl.jaxb.ObjectServicePort
+2014-08-05 12:15:39,955 INFO  [localhost-startStop-1] [org.apache.cxf.endpoint.ServerImpl] Setting the server's publish address to be /cmis/ObjectService
+2014-08-05 12:15:39,957 INFO  [localhost-startStop-1] [org.nuxeo.runtime.osgi.OSGiRuntimeService] Nuxeo EP Started
+======================================================================
+= Component Loading Status: Pending: 0 / Unstarted: 0 / Total: 599
+======================================================================
+2014-08-05 12:15:39,957 INFO  [localhost-startStop-1] [org.nuxeo.osgi.application.FrameworkBootstrap] Framework started in 40 sec.
+2014-08-05 12:15:39,959 INFO  [localhost-startStop-1] [org.apache.catalina.startup.HostConfig] Deploying web application directory /var/lib/nuxeo/server/webapps/manager
+2014-08-05 12:15:40,046 INFO  [localhost-startStop-1] [org.apache.catalina.startup.HostConfig] Deploying web application directory /var/lib/nuxeo/server/webapps/host-manager
+2014-08-05 12:15:40,116 INFO  [localhost-startStop-1] [org.apache.catalina.startup.HostConfig] Deploying web application directory /var/lib/nuxeo/server/webapps/ROOT
+2014-08-05 12:15:40,778 INFO  [main] [org.apache.coyote.http11.Http11Protocol] Starting ProtocolHandler ["http-bio-10.1.1.9-8080"]
+2014-08-05 12:15:40,800 INFO  [main] [org.apache.coyote.ajp.AjpProtocol] Starting ProtocolHandler ["ajp-bio-10.1.1.9-auto-1-57555"]
+2014-08-05 12:15:40,804 INFO  [main] [org.apache.catalina.startup.Catalina] Server startup in 48147 ms
+2014-08-05 12:15:50,180 INFO  [http-bio-10.1.1.9-8080-exec-23] [org.apache.jasper.compiler.TldLocationsCache] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2014-08-05 12:17:37,439 ERROR [Nuxeo-Work-csvImporter-1] [org.nuxeo.ecm.core.work.AbstractWork] Exception during work: CSVImporterWork(, Progress(?%, ?/0), Importing)
+java.lang.ArrayIndexOutOfBoundsException: 1
+        at org.nuxeo.ecm.csv.CSVImporterWork.computePropertiesMap(CSVImporterWork.java:306)
+        at org.nuxeo.ecm.csv.CSVImporterWork.importLine(CSVImporterWork.java:283)
+        at org.nuxeo.ecm.csv.CSVImporterWork.doImport(CSVImporterWork.java:221)
+        at org.nuxeo.ecm.csv.CSVImporterWork.work(CSVImporterWork.java:157)
+        at org.nuxeo.ecm.core.work.AbstractWork.runWorkWithTransaction(AbstractWork.java:355)
+        at org.nuxeo.ecm.core.work.AbstractWork.runWorkWithTransactionAndCheckExceptions(AbstractWork.java:316)
+        at org.nuxeo.ecm.core.work.AbstractWork.run(AbstractWork.java:284)
+        at org.nuxeo.ecm.core.work.WorkHolder.run(WorkHolder.java:49)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:744)
+                                                     

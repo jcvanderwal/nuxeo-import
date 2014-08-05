@@ -99,10 +99,11 @@ def format_excel_file(path, csv_name):
         #Date,  CSV importer needs MM/dd/yyyy, excels files are yyyyMMddxx
         disposable=cell2string(row[3])[:8]
         if len(disposable)<6 and len(disposable) != 0 :
-            print "foute invoer datum op regel: ", row_idx
+            print "wrong date input on row: ", row_idx
             csv_row.append("")
         elif len(disposable)==6:
             csv_row.append("01/"+disposable[4:6]+"/"+disposable[:4])
+            print "disposable"
         else:
             csv_row.append(disposable[4:6]+"/"+disposable[6:8]+"/"+disposable[:4])
         #DepartementSubject (should looks like dpt/subject/subsubject)
